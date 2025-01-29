@@ -4,8 +4,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>legal solution</title>
+    <!-- Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+      <!-- custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              "custom-color": '#B68C5A',
+              "dark-3": '#707070',
+              backgroundImage: {
+                'hero-pattern': "url('./images/banner.png')",
+
+               }
+            }
+          }
+        }
+      }
+  </script>
+    <style>
+        .font-eb{
+          font-family: "EB Garamond", serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="font-eb">
+    <header class="max-w-screen-xl mx-auto ">
+        <nav>
+            <div class="navbar bg-base-100 p-0">
+                <div class="navbar-start ">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-3">
+                      <li><a class="bg-rose-300">Home</a></li>
+                      <li>
+                        <a class="bg-rose-300">Services</a>
+                        <ul class="p-2">
+                          <li><a class="bg-pink-200 mb-2">Service-1</a></li>
+                          <li><a class="bg-pink-200">Service-2</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="bg-rose-300">Cases</a>
+                        <ul class="p-2">
+                          <li><a class="bg-purple-200 mb-2">Case-1</a></li>
+                          <li><a class="bg-purple-200">Case-2</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="bg-rose-300">Vlog</a>
+                        <ul class="p-2">
+                          <li><a class="bg-red-200 mb-2">Vlog-1</a></li>
+                          <li><a class="bg-red-200">Vlog-2</a></li>
+                        </ul>
+                      </li>
+                      <li class="bg-rose-300"><a>Details</a></li>
+                    </ul>
+                  </div>
+                  <div class="">
+                    <img src="./images/logo2.png" alt="">
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-dark-3 font-bold">Home</a></li>
+                    <li>
+                      <details>
+                        <summary class="text-dark-3 font-bold">Services</summary>
+                        <ul class="p-2">
+                          <li><a class="bg-gray-500 mb-2">Service-1</a></li>
+                          <li><a class="bg-gray-500">Service-2</a></li> 
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                      <details>
+                        <summary class="text-dark-3 font-bold">Cases</summary>
+                        <ul class="p-2">
+                          <li><a class="bg-gray-500 mb-2">Case-1</a></li>
+                          <li><a class="bg-gray-500">Case-2</a></li> 
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                      <details>
+                        <summary class="text-dark-3 font-bold">Vlogs</summary>
+                        <ul class="p-2">
+                          <li><a class="bg-gray-500 mb-2">Vlog-1</a></li>
+                          <li><a class="bg-gray-500">Vlog-2</a></li> 
+                        </ul>
+                      </details>
+                    </li>
+                    <li>
+                      <details>
+                        <summary class="text-dark-3 font-bold">Contact Us</summary>
+                        <ul class="p-2">
+                          <li><a class="bg-gray-500 mb-2">Number-1</a></li>
+                          <li><a class="bg-gray-500">Number-2</a></li> 
+                        </ul>
+                      </details>
+                    </li>
+                    
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-custom-color">Free Consultation</a>
+                </div>
+              </div>
+        </nav>
+        <div class="">
+          <div class=" hero bg-[url('./images/banner.png')] w-full h-[550px] bg-cover bg-center bg-no-repeat" >
+              <div class="hero-overlay "></div>
+              <div class="hero-content text-neutral-content text-center py-20">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solutions</h1>
+                  <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                  </p>
+                  <div class="flex gap-3 items-center justify-center">
+                    <input type="text" class="border-none rounded-md py-3 lg:px-32 text-black "  placeholder="search your services">
+                    <button class="btn bg-custom-color border border-none">search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </header>
+    <main>
+      <section class="max-w-screen-xl mx-auto my-14">
+        <div>
+          <div class="mb-20">
+            <h1 class="text-3xl font-semibold flex justify-center items-center mb-3 text-center">The Legal Practice Area</h1>
+            <p class="font-semibold text-dark-3 flex justify-center items-center text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="card border-b-2 rounded-none">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./images/business.png"
+                  alt="Shoes"/>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Business Law</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="card-actions">
+                  <img src="./images/Frame.png" alt="">
+                </div>
+              </div>
+            </div>
+              <div class="card border-x-2 border-b-2 rounded-none bg-[#E7E7E7]">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/criminal.png"
+                    alt="Shoes"
+                    class="" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Criminal Law</h2>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                  <div class="card-actions">
+                    <img src="./images/Frame.png" alt="">
+                  </div>
+                </div>
+              </div>
+            <div class="card border-b-2 rounded-none">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./images/child.png"
+                  alt="Shoes"
+                  class="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Child Support</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="card-actions">
+                  <img src="./images/Frame.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="card  rounded-none">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./images/education.png"
+                  alt="Shoes"/>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Education Law</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="card-actions">
+                  <img src="./images/Frame.png" alt="">
+                </div>
+              </div>
+            </div>
+              <div class="card border-x-2 rounded-none">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/divorce.png"
+                    alt="Shoes"
+                    class="" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Divorce Law</h2>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                  <div class="card-actions">
+                    <img src="./images/Frame.png" alt="">
+                  </div>
+                </div>
+              </div>
+            <div class="card  rounded-none">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./images/tax.png"
+                  alt="Shoes"
+                  class="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Tax Law</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="card-actions">
+                  <img src="./images/Frame.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-screen-xl mx-auto my-14">
+          
+      </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
